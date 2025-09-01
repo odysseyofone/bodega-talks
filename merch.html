@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bodega Talks</title>
+
+    <!-- Preload the logo -->
+    <link
+      rel="preload"
+      href="logos/BDT-web.svg"
+      as="image"
+      type="image/svg+xml"
+    />
+
+    <!-- Font Awesome for social icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bevan&display=swap"
+    />
+
+    <!-- Your site styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav" aria-label="Primary">
+        <!-- Logo -->
+        <a href="/" class="logo" aria-label="Bodega Talks — Home">
+          <img
+            src="/assets/BDT-web.svg"
+            alt="Bodega Talks logo"
+            class="logo-svg"
+            width="200"
+            height="50"
+            decoding="async"
+          />
+        </a>
+
+        <!-- Primary links -->
+        <ul class="nav-links">
+          <li><a href="/merch.html" class="nav-watch">MERCH</a></li>
+        </ul>
+
+        <!-- Social icons in header -->
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com/bodegatalks/?hl=en"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/@xperimenttv"
+            target="_blank"
+            aria-label="YouTube"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a
+            href="https://www.tiktok.com/@bodegatalks?lang=en"
+            target="_blank"
+            aria-label="TikTok"
+          >
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero-merch">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <h1>Shop Bodega Talks Merch</h1>
+            <p>
+              Limited drops. Street-ready staples. Grab yours before they’re
+              gone.
+            </p>
+            <a href="/merch.html" class="cta">Shop All</a>
+          </div>
+
+          <div class="product-grid">
+            <!-- Item 1 -->
+            <article class="product-card">
+              <a
+                href="/merch.html#tee"
+                class="product-media"
+                aria-label="Bodega Talks Logo Tee"
+              >
+                <img
+                  src="/assets/products/Crew-Neck-lowNY.jpg"
+                  alt="Bodega Talks Logo Tee"
+                  width="320"
+                  height="400"
+                  loading="lazy"
+                />
+              </a>
+              <div class="product-info">
+                <h3 class="product-title">Logo Tee</h3>
+                <p class="product-price">$30</p>
+                <a href="/merch.html#tee" class="btn">View</a>
+              </div>
+            </article>
+
+            <!-- Item 2 -->
+            <article class="product-card">
+              <a
+                href="/merch.html#hoodie"
+                class="product-media"
+                aria-label="Bodega Talks Hoodie"
+              >
+                <img
+                  src="/assets/products/Crew-Neckback.jpg"
+                  alt="Bodega Talks Hoodie"
+                  width="320"
+                  height="400"
+                  loading="lazy"
+                />
+              </a>
+              <div class="product-info">
+                <h3 class="product-title">Classic Hoodie</h3>
+                <p class="product-price">$60</p>
+                <a href="/merch.html#hoodie" class="btn">View</a>
+              </div>
+            </article>
+
+            <!-- Item 3 (optional) -->
+            <article class="product-card hide-on-mobile">
+              <a
+                href="/merch.html#cap"
+                class="product-media"
+                aria-label="Bodega Talks Cap"
+              >
+                <img
+                  src="/images/merch/cap.jpg"
+                  alt="Bodega Talks Cap"
+                  width="320"
+                  height="400"
+                  loading="lazy"
+                />
+              </a>
+              <div class="product-info">
+                <h3 class="product-title">BT Cap</h3>
+                <p class="product-price">$28</p>
+                <a href="/merch.html#cap" class="btn">View</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Bodega Talks. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bodega Talks</title>
+
+    <!-- Preload the logo -->
+    <link
+      rel="preload"
+      href="logos/BDT-web.svg"
+      as="image"
+      type="image/svg+xml"
+    />
+
+    <!-- Font Awesome for social icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bevan&display=swap"
+    />
+
+    <!-- Your site styles -->
+    <link id="main-style" rel="stylesheet" href="styles.css" />
+
+    <script>
+      // Bust CSS cache by appending timestamp
+      const link = document.getElementById("main-style");
+      const bust = new Date().getTime(); // unique number every load
+      link.href = link.href + "?v=" + bust;
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav" aria-label="Primary">
+        <!-- Logo -->
+        <a href="/" class="logo" aria-label="Bodega Talks — Home">
+          <img
+            src="/assets/BDT-web.svg"
+            alt="Bodega Talks logo"
+            class="logo-svg"
+            width="200"
+            height="50"
+            decoding="async"
+          />
+        </a>
+
+        <!-- Primary links -->
+        <ul class="nav-links">
+          <li><a href="/merch.html" class="nav-watch">MERCH</a></li>
+        </ul>
+
+        <!-- Social icons in header -->
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com/bodegatalks/?hl=en"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/@xperimenttv"
+            target="_blank"
+            aria-label="YouTube"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a
+            href="https://www.tiktok.com/@bodegatalks?lang=en"
+            target="_blank"
+            aria-label="TikTok"
+          >
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero-videos">
+        <h1>Latest Episodes</h1>
+        <div class="hero-videos-grid">
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/7w1EI8mZNPU?start=147"
+              title="Bodega Talks Episode 1"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/GcE8I_JKhXU"
+              title="Bodega Talks Episode 2"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/YDgvDCw4XeQ"
+              title="Bodega Talks Episode 3"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Bodega Talks. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
